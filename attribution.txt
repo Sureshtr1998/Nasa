@@ -1,0 +1,5 @@
+
+1 => react-slick for Sliders
+2 => Tailwind for styling
+3 => Axios to do api calls
+4 => React Modal to display the images and videos
