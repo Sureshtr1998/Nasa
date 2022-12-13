@@ -1,0 +1,95 @@
+@import url('./slider.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 20px;
+    background-image: url('../assets/bgrocket.jpg');
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-repeat: repeat-y;
+    background-position: top center;
+}
+
+.apod {
+    border-radius: 20px;
+    border: 4px solid wheat;
+}
+
+.SpotLight {
+    margin-top: 4%;
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row-reverse;
+}
+
+.dataDetails {
+    width: 80%;
+    list-style-type: circle;
+}
+
+.spotImage {
+    width: 2500px;
+    border-radius: 20px;
+    border: 4px solid wheat;
+    cursor: pointer;
+}
+
+.modalAsset {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.closeIcon {
+    float: right;
+    font-size: larger;
+    font-weight: 800;
+    color: black
+}
+
+.closeIcon:hover {
+    color: rgb(139, 3, 3);
+}
+
+.nasaAnimation {
+    animation: rotation 10s;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .SpotLight {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dataDetails {
+        width: 100%;
+    }
+
+    .spotImage {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 20px;
+        border: 4px solid wheat;
+    }
+}
