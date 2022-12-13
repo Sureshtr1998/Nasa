@@ -28,7 +28,7 @@ const Sliders = (props) => {
         const height =
             document.documentElement.scrollHeight -
             document.documentElement.clientHeight
-        if (scrollPosition / height >= 1) {
+        if (scrollPosition / height >= 0.9) {
             fetchData()
         }
     }, [scrollPosition])
